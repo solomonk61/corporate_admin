@@ -6,4 +6,5 @@ COPY . .
 EXPOSE 1337
 RUN chown -R node /usr/src/app
 USER node
+RUN npm build
 CMD ["npm", "start"]
